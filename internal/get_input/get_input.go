@@ -45,7 +45,7 @@ func GetInput(url string) string {
 	}
 	defer resp.Body.Close()
 
-	fmt.Printf("Status code #{resp.StatusCode}\n")
+	fmt.Printf("Status code %d\n", resp.StatusCode)
 
 	var body string
 	if resp.StatusCode == http.StatusOK {
