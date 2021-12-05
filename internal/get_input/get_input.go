@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 	"os"
+	"strings"
 
 	"github.com/joho/godotenv"
 )
@@ -18,6 +19,12 @@ func sessionCookieValue() string {
 	}
 
 	return os.Getenv("SESSION")
+}
+
+func Lines(url string) []string {
+	bs := GetInput(url)
+	lines := strings.Split(strings.TrimSuffix(bs, "\n"), "\n")
+	return lines
 }
 
 func GetInput(url string) string {

@@ -1,13 +1,13 @@
 package main
 
 import (
-	"log"
+	"fmt"
 
 	"github.com/cody-s-lee/advent-of-code-2021/internal/get_input"
 )
 
 func main() {
-	bs := get_input.GetInput("https://adventofcode.com/2021/day/x/input")
+	lines := get_input.GetInput("https://adventofcode.com/2021/day/x/input")
 
-	log.Print(bs)
+	fmt.Printf("%v\n", lines)
 }
