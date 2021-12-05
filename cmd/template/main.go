@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	lines := get_input.GetInput("https://adventofcode.com/2021/day/x/input")
+	lines := get_input.Lines("https://adventofcode.com/2021/day/x/input")
 
 	fmt.Printf("%v\n", lines)
 }

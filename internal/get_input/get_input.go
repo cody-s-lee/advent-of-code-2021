@@ -12,6 +12,11 @@ import (
 	"github.com/joho/godotenv"
 )
 
+func SplitPair(s string, sep string) (string, string) {
+	substrings := strings.SplitN(s, sep, 2)
+	return substrings[0], substrings[1]
+}
+
 func sessionCookieValue() string {
 	err := godotenv.Load(".env")
 	if err != nil {
