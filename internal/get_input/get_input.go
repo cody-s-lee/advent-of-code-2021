@@ -12,6 +12,16 @@ import (
 	"github.com/joho/godotenv"
 )
 
+func SplitTriplet(s string, sep string) (string, string, string) {
+	substrings := strings.SplitN(s, sep, 3)
+	return substrings[0], substrings[1], substrings[2]
+}
+
+func SplitN(s string, sep string) (string, string) {
+	substrings := strings.SplitN(s, sep, 2)
+	return substrings[0], substrings[1]
+}
+
 func SplitPair(s string, sep string) (string, string) {
 	substrings := strings.SplitN(s, sep, 2)
 	return substrings[0], substrings[1]
