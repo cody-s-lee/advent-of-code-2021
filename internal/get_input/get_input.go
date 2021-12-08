@@ -24,7 +24,7 @@ func SplitN(s string, sep string) (string, string) {
 
 func SplitPair(s string, sep string) (string, string) {
 	substrings := strings.SplitN(s, sep, 2)
-	return substrings[0], substrings[1]
+	return strings.TrimSpace(substrings[0]), strings.TrimSpace(substrings[1])
 }
 
 func sessionCookieValue() string {
