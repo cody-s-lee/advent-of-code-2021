@@ -168,12 +168,6 @@ func (digits digits) find(output string) int {
 	return -1
 }
 
-func (digits digits) swap(i, j int) {
-	x := digits[j]
-	digits[j] = digits[i]
-	digits[i] = x
-}
-
 func sorted(s string) string {
 	ss := strings.Split(s, "")
 	sort.Strings(ss)
