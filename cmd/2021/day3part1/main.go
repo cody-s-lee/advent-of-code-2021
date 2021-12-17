@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	bs := get_input.GetInput("https://adventofcode.com/2021/day/3/input")
+	bs := get_input.Body("https://adventofcode.com/2021/day/3/input")
 
 	fmt.Print(bs)
 

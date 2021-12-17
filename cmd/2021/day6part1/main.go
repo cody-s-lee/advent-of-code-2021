@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	body := get_input.GetInput("https://adventofcode.com/2021/day/6/input")
+	body := get_input.Body("https://adventofcode.com/2021/day/6/input")
 	body = strings.Trim(body, "[]")
 
 	fmt.Printf("%v\n", body)

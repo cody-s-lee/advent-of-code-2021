@@ -16,7 +16,7 @@ func main() {
 func partOne() {
 	fmt.Printf("Part 1\n")
 
-	body := get_input.GetInput("https://adventofcode.com/2015/day/3/input")
+	body := get_input.Body("https://adventofcode.com/2015/day/3/input")
 	body = strings.TrimSpace(body)
 
 	houses := make(map[point.Point]int)
@@ -52,7 +52,7 @@ func partOne() {
 func partTwo() {
 	fmt.Printf("Part 2\n")
 
-	body := get_input.GetInput("https://adventofcode.com/2015/day/3/input")
+	body := get_input.Body("https://adventofcode.com/2015/day/3/input")
 	body = strings.TrimSpace(body)
 
 	houses := make(map[point.Point]int)

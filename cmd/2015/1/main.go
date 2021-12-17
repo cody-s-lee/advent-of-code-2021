@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	body := get_input.GetInput("https://adventofcode.com/2015/day/1/input")
+	body := get_input.Body("https://adventofcode.com/2015/day/1/input")
 	body = strings.Trim(body, "[]\n")
 	fmt.Printf("%v\n", body)
 

@@ -9,7 +9,7 @@ import (
 
 // Part one is the travelling salesman problem. Ugh.
 func main() {
-	body := get_input.GetInput("https://adventofcode.com/2015/day/11/input")
+	body := get_input.Body("https://adventofcode.com/2015/day/11/input")
 	body = strings.TrimSpace(body)
 	passwordOne := []byte(body)
 	passwordOne = increment(passwordOne)

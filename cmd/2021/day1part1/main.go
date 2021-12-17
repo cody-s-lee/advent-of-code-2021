@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	bs := get_input.GetInput("https://adventofcode.com/2021/day/1/input")
+	bs := get_input.Body("https://adventofcode.com/2021/day/1/input")
 
 	var dl []int
 	for _, s := range strings.Split(bs, "\n") {

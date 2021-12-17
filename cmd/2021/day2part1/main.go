@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	bs := get_input.GetInput("https://adventofcode.com/2021/day/2/input")
+	bs := get_input.Body("https://adventofcode.com/2021/day/2/input")
 
 	distance, depth := 0, 0
 

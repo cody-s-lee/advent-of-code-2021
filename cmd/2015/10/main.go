@@ -11,7 +11,7 @@ import (
 
 // Part one is the travelling salesman problem. Ugh.
 func main() {
-	body := get_input.GetInput("https://adventofcode.com/2015/day/10/input")
+	body := get_input.Body("https://adventofcode.com/2015/day/10/input")
 	body = strings.TrimSpace(body)
 	sequence := make([]int, 0)
 

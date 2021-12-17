@@ -37,12 +37,12 @@ func sessionCookieValue() string {
 }
 
 func Lines(url string) []string {
-	bs := GetInput(url)
+	bs := Body(url)
 	lines := strings.Split(strings.TrimSuffix(bs, "\n"), "\n")
 	return lines
 }
 
-func GetInput(url string) string {
+func Body(url string) string {
 	jar, err := cookiejar.New(nil)
 	if err != nil {
 		log.Fatalf("Got error while creating cookie jar #{err.Error()}\n")
